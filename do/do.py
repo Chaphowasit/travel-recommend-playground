@@ -77,8 +77,12 @@ def clean_html_and_classify(json_data):
         classification["longitude"] = longitude
 
         # start_time and end_time = 00:00 AM - 11:59 PM
-        classification["start_time"] = "00:00 AM"
-        classification["end_time"] = "11:59 PM"
+        start_end_time = soup.find_all(class_="EFKKt")
+        # extract time before and after hyphen
+        if start_end_time:
+            time_default = [remove_newline_and_extra_spaces_from_string(time) for time in start_end_time[0].text.split("-")]
+            classification["start_time"] = time_default[0]
+            classification["end_time"] = time_default[1]
       
         # extract reviews from the HTML content
         reviews_outer = soup.find_all(class_="JguWG")
