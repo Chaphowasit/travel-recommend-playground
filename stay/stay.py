@@ -4,6 +4,14 @@ import os
 import re
 from bs4 import BeautifulSoup
 
+def remove_newline_and_extra_spaces_from_string(string):
+    # Replace multiple spaces with a single space
+    string = re.sub(r'\s+', ' ', string)
+    # Remove all newline characters
+    string = string.replace("\n", "")
+    return string.strip() 
+
+
 def clean_html_and_classify(json_data):
     cleaned_json = []
     for entry in json_data:
@@ -22,27 +30,15 @@ def clean_html_and_classify(json_data):
 
         # Extract description from the HTML content
         paragraphs = soup.find_all(
-            class_="biGQs _P pZUbB alXOW eWlDX GzNcM ATzgx UTQMg TwpTY hmDzD"
+            class_="uqMDf z BGJxv YGfmd YQkjl"
         )
         if paragraphs:
             classification["about_and_tags"] = [
-                para.text.strip() for para in paragraphs
+                remove_newline_and_extra_spaces_from_string(paragraph.text.strip())
+                for paragraph in paragraphs
             ]
         else:
-            # Try to find description using regex
-            description_pattern = r'"description":"(.*?)"'
-            description_match = re.search(description_pattern, html_content)
-            description_soup = soup.find_all(class_="SrqKb")
-
-            if description_match:
-                # Initialize as a list with the matched description
-                classification["about_and_tags"] = [description_match.group(1)]
-
-                # Append the description_soup text to the list
-                for desc in description_soup:
-                    classification["about_and_tags"].append(desc.text.strip())
-            else:
-                classification["about_and_tags"] = None
+            classification["about_and_tags"] = None
 
         # Extract address from the HTML content
         latitude = None
@@ -69,101 +65,53 @@ def clean_html_and_classify(json_data):
         classification["latitude"] = latitude
         classification["longitude"] = longitude
 
-        # Extract time_duration from the HTML content
-        time_duration = soup.find_all(class_="biGQs _P pZUbB egaXP hmDzD")
-        if time_duration:
-            for time in time_duration:
-                time_str = time.text.strip()
-                time_str = " ".join(time_str.split())
-                time_str = time_str.replace("\n - \n", " - ")
-                times = time_str.split("-")
-                if len(times) == 2:
-                    start_time, end_time = map(str.strip, times)
-                    # Add start_time and end_time to classification dictionary
-                    classification["start_time"] = start_time
-                    classification["end_time"] = end_time
-                else:
-                    classification["start_time"] = None
-                    classification["end_time"] = None
-        else:
-            time_duration_pattern = r"\"times\":\[(.*?)\]"
-            time_duration_match = re.search(time_duration_pattern, html_content)
-            if time_duration_match:
-                # "\"12:00 AM - 11:59 PM\"" i want to clean this string
-                time_duration = time_duration_match.group(1)
-                time_duration = time_duration.replace('"', "")
-                times = time_duration.split("-")
-                if len(times) == 2:
-                    start_time, end_time = map(str.strip, times)
-                    # Add start_time and end_time to classification dictionary
-                    classification["start_time"] = start_time
-                    classification["end_time"] = end_time
-                else:
-                    classification["start_time"] = None
-                    classification["end_time"] = None
-            else:
-                classification["start_time"] = None
-                classification["end_time"] = None
-
+        # start_time and end_time = 00:00 AM - 11:59 PM
+        classification["start_time"] = "00:00 AM"
+        classification["end_time"] = "11:59 PM"
+      
         # extract reviews from the HTML content
-        reviews = soup.find_all(class_="JguWG")
+        reviews = soup.find_all(class_="orRIx Ci _a C")
         if reviews:
             classification["reviews"] = [review.text.strip() for review in reviews]
             classification["reviews"] = [
-                re.sub(r"[^\x00-\x7F]+", "", review)
-                for review in classification["reviews"]
-            ]
+                    remove_newline_and_extra_spaces_from_string(
+                        re.sub(r"[^\x00-\x7F]+", "", review.text.strip())
+                    )
+                    for review in reviews
+                ]
         else:
             reviews = soup.find_all(class_="partial_entry")
             if reviews:
-                classification["reviews"] = [review.text.strip() for review in reviews]
-                # clear all emojis in reviews
+                # Extract the text, strip whitespace, remove emojis, and clear spaces and newlines
                 classification["reviews"] = [
-                    re.sub(r"[^\x00-\x7F]+", "", review)
-                    for review in classification["reviews"]
+                    remove_newline_and_extra_spaces_from_string(
+                        re.sub(r"[^\x00-\x7F]+", "", review.text.strip())
+                    )
+                    for review in reviews
                 ]
             else:
                 classification["reviews"] = None
 
         # extract nearby places from the HTML content
-        nearby_places = soup.find_all(class_="biGQs _P fiohW ngXxk")
+        nearby_places = soup.find_all(class_="xCVkR")
         if nearby_places:
-            nearby_places = [place.text.strip() for place in nearby_places]
-        else:
-            nearby_places = soup.find_all(class_="sectionTitle")
-            if nearby_places:
-                nearby_places = [place.text.strip() for place in nearby_places]
+            # Find text in the nearby places that contain "Restaurants" or "Attractions"
+            res = [place for place in nearby_places if "Restaurants" in place.text.strip()]
+            attr = [place for place in nearby_places if "Attractions" in place.text.strip()]
 
-        best_nearby_hotels = []
-        best_nearby_restaurants = []
+            # Extract relevant information if 'res' or 'attr' is found
+            if res:
+                res = [place.find_all(class_="o W q") for place in res]
+            if attr:
+                attr = [place.find_all(class_="o W q") for place in attr]
 
-        if "Best nearby hotels" in nearby_places:
-            index_best_nearby_hotels = nearby_places.index("Best nearby hotels")
-        if "Best nearby restaurants" in nearby_places:
-            index_best_nearby_restaurants = nearby_places.index(
-                "Best nearby restaurants"
-            )
-        if "Best nearby attractions" in nearby_places:
-            index_best_nearby_attractions = nearby_places.index(
-                "Best nearby attractions"
-            )
+            # Extract and clean text from the found elements
+            best_nearby_restaurants = [item.text.strip() for sublist in res for item in sublist if item]
+            best_nearby_attractions = [item.text.strip() for sublist in attr for item in sublist if item]
 
-        for item in nearby_places:
-            if item == "Best nearby hotels":
-                best_nearby_hotels = nearby_places[
-                    index_best_nearby_hotels + 1 : index_best_nearby_restaurants
-                ]
-            if item == "Best nearby restaurants":
-                best_nearby_restaurants = nearby_places[
-                    index_best_nearby_restaurants + 1 : index_best_nearby_attractions
-                ]
-            if item == "Best nearby attractions":
-                best_nearby_attractions = nearby_places[
-                    index_best_nearby_attractions + 1 :
-                ]
-
-        classification["best_nearby_hotels"] = best_nearby_hotels
-        classification["best_nearby_restaurants"] = best_nearby_restaurants
+            # Store the results in the classification dictionary
+            classification["best_nearby_restaurants"] = best_nearby_restaurants
+            classification["best_nearby_attractions"] = best_nearby_attractions
 
         entry["html"] = cleaned_html
         entry["classification"] = classification
