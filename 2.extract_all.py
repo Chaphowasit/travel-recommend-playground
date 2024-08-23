@@ -3,6 +3,15 @@ import html
 import os
 import re
 from bs4 import BeautifulSoup
+from datetime import datetime
+
+def convert_time_string(value):
+    try:
+        # Convert '5:30 PM' or similar formats to '17:30:00'
+        return datetime.strptime(value.strip(), '%I:%M %p').time().strftime('%H:%M:%S')
+    except ValueError:
+        return value
+
 
 # Constants for patterns and classes
 LATITUDE_PATTERN = r'"latitude":(\d+\.\d+)'
@@ -33,11 +42,29 @@ def clean_reviews(reviews):
         ) for review in reviews
     ] if reviews else None
 
-def extract_nearby_places(soup):
-    classification_nearby = {
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+def extract_nearby_places(soup, best_nearby_hotels):
+    
+    # Initialize the classification dictionary with the new fields
+    if not best_nearby_hotels:
+         classification_nearby = {
+        "nearby_foodAndDrink1": None,
+        "nearby_foodAndDrink2": None,
+        "nearby_foodAndDrink3": None,
+        "nearby_activity1": None,
+        "nearby_activity2": None,
+        "nearby_activity3": None,
+    }
+    else:
+        classification_nearby = {
+        "nearby_accommodation1": None,
+        "nearby_accommodation2": None,
+        "nearby_accommodation3": None,
+        "nearby_foodAndDrink1": None,
+        "nearby_foodAndDrink2": None,
+        "nearby_foodAndDrink3": None,
+        "nearby_activity1": None,
+        "nearby_activity2": None,
+        "nearby_activity3": None,
     }
 
     # First method to find nearby places
@@ -54,14 +81,22 @@ def extract_nearby_places(soup):
             index_best_nearby_restaurants = nearby_places_text.index("Best nearby restaurants")
             index_best_nearby_attractions = nearby_places_text.index("Best nearby attractions")
 
-            classification_nearby["best_nearby_hotels"] = nearby_places_text[index_best_nearby_hotels + 1:index_best_nearby_restaurants]
-            classification_nearby["best_nearby_restaurants"] = nearby_places_text[index_best_nearby_restaurants + 1:index_best_nearby_attractions]
-            classification_nearby["best_nearby_attractions"] = nearby_places_text[index_best_nearby_attractions + 1:]
+            classification_nearby["nearby_accommodation1"] = nearby_places_text[index_best_nearby_hotels + 1] if index_best_nearby_hotels + 1 < index_best_nearby_restaurants else None
+            classification_nearby["nearby_accommodation2"] = nearby_places_text[index_best_nearby_hotels + 2] if index_best_nearby_hotels + 2 < index_best_nearby_restaurants else None
+            classification_nearby["nearby_accommodation3"] = nearby_places_text[index_best_nearby_hotels + 3] if index_best_nearby_hotels + 3 < index_best_nearby_restaurants else None
+
+            classification_nearby["nearby_foodAndDrink1"] = nearby_places_text[index_best_nearby_restaurants + 1] if index_best_nearby_restaurants + 1 < index_best_nearby_attractions else None
+            classification_nearby["nearby_foodAndDrink2"] = nearby_places_text[index_best_nearby_restaurants + 2] if index_best_nearby_restaurants + 2 < index_best_nearby_attractions else None
+            classification_nearby["nearby_foodAndDrink3"] = nearby_places_text[index_best_nearby_restaurants + 3] if index_best_nearby_restaurants + 3 < index_best_nearby_attractions else None
+
+            classification_nearby["nearby_activity1"] = nearby_places_text[index_best_nearby_attractions + 1] if index_best_nearby_attractions + 1 < len(nearby_places_text) else None
+            classification_nearby["nearby_activity2"] = nearby_places_text[index_best_nearby_attractions + 2] if index_best_nearby_attractions + 2 < len(nearby_places_text) else None
+            classification_nearby["nearby_activity3"] = nearby_places_text[index_best_nearby_attractions + 3] if index_best_nearby_attractions + 3 < len(nearby_places_text) else None
         except ValueError:
             pass
 
     # Second method if the first one didn't work or only found restaurants and attractions
-    if not classification_nearby["best_nearby_restaurants"] or not classification_nearby["best_nearby_attractions"]:
+    if not any([classification_nearby[f"nearby_foodAndDrink{i}"] for i in range(1, 4)]) or not any([classification_nearby[f"nearby_activity{i}"] for i in range(1, 4)]):
         nearby_places = soup.find_all(class_="xCVkR")
         if nearby_places:
             res = [place for place in nearby_places if "Restaurants" in place.text.strip()]
@@ -69,24 +104,34 @@ def extract_nearby_places(soup):
 
             if res:
                 res = [place.find_all(class_="o W q") for place in res]
-                classification_nearby["best_nearby_restaurants"] = [item.text.strip() for sublist in res for item in sublist if item]
+                restaurants = [item.text.strip() for sublist in res for item in sublist if item][:3]
+                for i, restaurant in enumerate(restaurants):
+                    classification_nearby[f"nearby_foodAndDrink{i+1}"] = restaurant
             if attr:
                 attr = [place.find_all(class_="o W q") for place in attr]
-                classification_nearby["best_nearby_attractions"] = [item.text.strip() for sublist in attr for item in sublist if item]
+                attractions = [item.text.strip() for sublist in attr for item in sublist if item][:3]
+                for i, attraction in enumerate(attractions):
+                    classification_nearby[f"nearby_activity{i+1}"] = attraction
 
     # Third method if previous methods didn't yield results
-    if not classification_nearby["best_nearby_restaurants"] or not classification_nearby["best_nearby_attractions"]:
+    if not any([classification_nearby[f"nearby_foodAndDrink{i}"] for i in range(1, 4)]) or not any([classification_nearby[f"nearby_activity{i}"] for i in range(1, 4)]):
         nearby_places = soup.find_all(class_="yvHvW")
         if nearby_places:
-            res = nearby_places[0]
-            attr = nearby_places[1]
+            res = nearby_places[0].find_all(class_="biGQs _P alXOW oCpZu GzNcM nvOhm UTQMg ZTpaU ngXxk")
+            attr = nearby_places[1].find_all(class_="biGQs _P alXOW oCpZu GzNcM nvOhm UTQMg ZTpaU ngXxk")
 
-            classification_nearby["best_nearby_restaurants"] = [remove_newline_and_extra_spaces(restaurant.text.strip()) for restaurant in res if restaurant.text.strip() != ""]
-            classification_nearby["best_nearby_attractions"] = [remove_newline_and_extra_spaces(attraction.text.strip()) for attraction in attr if attraction.text.strip() != ""]
+            restaurants = [remove_newline_and_extra_spaces(restaurant.text.strip()) for restaurant in res if restaurant.text.strip() != ""][:3]
+            attractions = [remove_newline_and_extra_spaces(attraction.text.strip()) for attraction in attr if attraction.text.strip() != ""][:3]
+            
+            for i, restaurant in enumerate(restaurants):
+                classification_nearby[f"nearby_foodAndDrink{i+1}"] = restaurant
+            for i, attraction in enumerate(attractions):
+                classification_nearby[f"nearby_activity{i+1}"] = attraction
 
     return classification_nearby
 
-def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None, time_class=None, duration=False):
+
+def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None, time_class=None, duration=False, best_nearby_hotels=True):
     cleaned_json = []
     
     for entry in json_data:
@@ -128,13 +173,13 @@ def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None,
 
         # Set time duration or start/end times if applicable
         if type(time_class) == tuple and len(time_class) == 2:
-            classification["start_time"], classification["end_time"] = time_class
+            classification["start_time"], classification["end_time"] = convert_time_string(time_class[0]), convert_time_string(time_class[1])
         else:
             start_end_time = soup.find_all(class_=time_class)
             if start_end_time:
                 time_classes = [remove_newline_and_extra_spaces(time) for time in start_end_time[0].text.split("-")]
-                classification["start_time"] = time_classes[0]
-                classification["end_time"] = time_classes[1]
+                classification["start_time"] = convert_time_string(time_classes[0])
+                classification["end_time"] = convert_time_string(time_classes[1])
             else:
                 classification["start_time"] = None
                 classification["end_time"] = None
@@ -168,7 +213,7 @@ def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None,
                     ]
 
         # Extract nearby places
-        classification_nearby = extract_nearby_places(soup)
+        classification_nearby = extract_nearby_places(soup, best_nearby_hotels)
         classification.update(classification_nearby)
        
         entry["html"] = html_content
@@ -177,7 +222,7 @@ def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None,
 
     return cleaned_json
 
-def process_files(input_directory, output_directory, name_key, desc_class, reviews_class, time_class=None, duration=False):
+def process_files(input_directory, output_directory, name_key, desc_class, reviews_class, time_class=None, duration=False, best_nearby_hotels=True):
     os.makedirs(output_directory, exist_ok=True)
     json_files = [f for f in os.listdir(input_directory) if f.endswith(".json")]
 
@@ -189,7 +234,7 @@ def process_files(input_directory, output_directory, name_key, desc_class, revie
             with open(input_file, "r", encoding="utf-8") as file:
                 json_data = json.load(file)
 
-            cleaned_data = clean_html_and_classify(json_data, name_key, desc_class, reviews_class,  time_class, duration)
+            cleaned_data = clean_html_and_classify(json_data, name_key, desc_class, reviews_class,  time_class, duration, best_nearby_hotels)
             classification_data = [entry["classification"] for entry in cleaned_data]
 
             with open(output_file, "w", encoding="utf-8") as file:
@@ -205,6 +250,6 @@ def process_files(input_directory, output_directory, name_key, desc_class, revie
             print(f"An error occurred with file '{input_file}': {ex}")
 
 # Example usage for the different datasets
-#process_files("eat/prettier_json", "eat/extract_json", "foodAndDrink_name", "biGQs _P pZUbB alXOW eWlDX GzNcM ATzgx UTQMg TwpTY hmDzD", "JguWG", "biGQs _P pZUbB egaXP hmDzD", False)
-#process_files("stay/prettier_json", "stay/extract_json", "accommodation_name", "uqMDf z BGJxv YGfmd YQkjl", "orRIx Ci _a C", ("00:00 AM", "11:59 PM"), False)
-process_files("do/prettier_json", "do/extract_json", "activity_name", "USjYi _d", "dodo" , "EFKKt",True)
+process_files("eat/prettier_json", "eat/extract_json", "foodAndDrink_name", "biGQs _P pZUbB alXOW eWlDX GzNcM ATzgx UTQMg TwpTY hmDzD", "JguWG", "biGQs _P pZUbB egaXP hmDzD", False, True)
+process_files("stay/prettier_json", "stay/extract_json", "accommodation_name", "uqMDf z BGJxv YGfmd YQkjl", "orRIx Ci _a C", ("12:00 AM", "11:59 PM"), False,False)
+process_files("do/prettier_json", "do/extract_json", "activity_name", "USjYi _d", "dodo" , "EFKKt",True, False)

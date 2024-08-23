@@ -19,31 +19,12 @@
             "We had been looking at this beach from a far all day from different high viewpoints in Phuket. With how green the water looked from a far I thought that it would be turquoise water when we got there. It wasnt. There are no facilities(showers or bathrooms) that we could see. We set up at the far left if looking at the water where the sun chairs are at to rent. 4 chairs and 2 umbrellas was 400 baht. The sand was extremely hot, so bring some water shoes. The water was like bathtub temps. I could see where that would seem nice, but we were hoping for a cooler dip based off the heat outside. The water color up close was nothing to write home about.",
             "Clean and beautiful. Definitely worth the visit, a lot cleaner than patong beach, water is much nicer at Karon. Worth hiring chairs."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Sabaijai Cafe 1,234 0.3 mi $ • Cafe • Seafood • Asian",
-            "Soul Phuket 104 0.2 mi $$ - $$$ • Cafe • European • Thai",
-            "Two Chefs - Karon Beach 3,659 0.2 mi $$ - $$$ • Bar • International • European",
-            "Schlusslicht 553 0.2 mi $$ - $$$ • German • Bar • European",
-            "Sweet & Sour Restaurant 739 0.2 mi $ • Seafood • Asian • Thai",
-            "Saneha @KaronCafe' Steakhouse & Thai Cuisine 502 0.2 mi $$ - $$$ • Steakhouse • Thai • Contemporary",
-            "Napoli In Vespa 402 0.3 mi $ • Italian • Pizza • Seafood",
-            "Sweet Chilli 144 0.2 mi $ • Asian • Thai • Vegetarian Friendly",
-            "MINT Bar & Restaurant 369 0.3 mi $$ - $$$ • Bar • Pizza • European",
-            "Capri Noi Restaurant 717 0.2 mi $$ - $$$ • Italian • Pizza • Seafood"
-        ],
-        "best_nearby_attractions": [
-            "Karon Temple Market 888 0.4 mi Flea & Street Markets",
-            "Big Buddha Phuket 16,834 2.1 mi Points of Interest & Landmarks • Religious Sites",
-            "Wat Suwan Khiri Khet 203 0.5 mi Religious Sites",
-            "Bangla Road 20,991 3 mi Points of Interest & Landmarks",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Wat Karon 31 0.4 mi Religious Sites",
-            "Shopping Sale Karon Plaza 58 0.4 mi Flea & Street Markets",
-            "Mai Karon 1 0.4 mi Sports Camps & Clinics",
-            "Mai Karon Muay Thai 3 0.6 mi Sports Camps & Clinics",
-            "Unit 27 Total Conditioning & CrossFit Phuket 256 Sports Camps & Clinics"
-        ]
+        "nearby_foodAndDrink1": "Sabaijai Cafe",
+        "nearby_foodAndDrink2": "Soul Phuket",
+        "nearby_foodAndDrink3": "Two Chefs - Karon Beach",
+        "nearby_activity1": "Karon Temple Market",
+        "nearby_activity2": "Big Buddha Phuket",
+        "nearby_activity3": "Wat Suwan Khiri Khet"
     },
     {
         "activity_name": "Kata Noi Beach",
@@ -65,31 +46,12 @@
             "The beach was extremely packed and the water felt as if its been reused throughout the whole of Thailand; Warm, stagnant and cloudy. The sand on the other hand, even worse. It clung to me the whole day and even ended up in my hotel bed. Very unhappy with this experience, will not be returning swiftly. Avoid at all costs.",
             "just found the best market in kata noi. Really like seafood here and the cocktail choice. On the day I visited,there are a cabaret show and live music as well."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Ta Restaurant 232 475 ft $$ - $$$ • Seafood • Asian • Thai",
-            "Siam Smile Wine & Restaurant 724 474 ft $$ - $$$ • European • Asian • Thai",
-            "Mom Tri's Kitchen at Villa Royale 2,295 0.3 mi $$$$ • Seafood • Mediterranean • European",
-            "Issara - Restaurant & Bar 88 0.3 ft $$ - $$$ • International • Asian • Thai",
-            "Wok Street Food 212 0.4 mi $ • Seafood • International • Thai",
-            "Gastone 737 0.5 mi $$ - $$$ • Italian • Pizza • Seafood",
-            "Ta Restaurant 64 492 ft $$ - $$$ • Seafood • Asian • Thai",
-            "The Sundeck 150 0.4 mi $ • Bar • Mediterranean • Thai",
-            "Baan Chom View 295 0.3 mi $$ - $$$ • Seafood • Asian • Thai",
-            "Chanadda Royal Thai Cuisine 88 0.1 mi $$ - $$$ • Asian • Thai • Vegetarian Friendly"
-        ],
-        "best_nearby_attractions": [
-            "Pashtoosh Art Gallery 2 353 ft Art Galleries",
-            "Big Buddha Phuket 16,834 1.7 mi Points of Interest & Landmarks • Religious Sites",
-            "Karon Viewpoint 2,876 0.7 mi Lookouts",
-            "Kata Beach 8,322 1 mi Beaches",
-            "Kata Beach Community Park 95 0.8 mi Parks",
-            "Nai Harn Beach 4,463 2.1 mi Beaches • Lookouts",
-            "Windmill Viewpoint 317 2.6 mi Lookouts",
-            "Unit 27 Total Conditioning & CrossFit Phuket 256 Sports Camps & Clinics",
-            "Yanui Beach 607 2.8 mi Beaches",
-            "Promthep Cape 1,990 Lookouts"
-        ]
+        "nearby_foodAndDrink1": "Ta Restaurant",
+        "nearby_foodAndDrink2": "Siam Smile Wine & Restaurant",
+        "nearby_foodAndDrink3": "Mom Tri's Kitchen at Villa Royale",
+        "nearby_activity1": "Pashtoosh Art Gallery",
+        "nearby_activity2": "Big Buddha Phuket",
+        "nearby_activity3": "Karon Viewpoint"
     },
     {
         "activity_name": "Phuket Shuttle",
@@ -111,39 +73,20 @@
             "On time pick up & Reasonable price & prompt response. Like their service. Drivers are friendly, patience, reliable. Great great great",
             "Reliable transportation service and nice recommendations for day trips, very professional and friendly service, especially Pat. Thank you!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Biker's Corner Kata Beach Restaurant & Bar 1 25 ft $$ - $$$ • Pizza • European • Thai",
-            "Pizzeria Al Fiume 21 0.3 mi Italian • Vegetarian Friendly",
-            "Mid Way Café Bar & Grill 1 0.4 mi $ • American • Thai • Grill",
-            "The CaddyShack 16 0.5 mi $$ - $$$ • Bar • Thai • British",
-            "Da Sandro Kathu 44 0.6 mi $$ - $$$ • Italian • International • Mediterranean",
-            "Mai-Reab Zaap-Ver 5 0.6 mi $ • Thai",
-            "Krua Pailin Phuket Food 4 0.6 mi Thai",
-            "Blue Beach Cafe & Restaurant 4 0.7 mi $$ - $$$ • Thai",
-            "Rabieng Kathu Restaurant 38 0.7 mi $ • Asian • Thai • Vegetarian Friendly",
-            "Mee Dee Restaurant 8 0.7 mi $$ - $$$ • Italian • Chinese • Japanese"
-        ],
-        "best_nearby_attractions": [
-            "Phuket Wake Park 164 0.2 mi Sports Complexes",
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Phuket Elephant Nature Reserve 159 Nature & Wildlife Areas",
-            "Andamanda Phuket 948 2.7 mi Amusement & Theme Parks • Water Parks",
-            "Green Elephant Sanctuary Park 2,522 Nature & Wildlife Areas",
-            "Phuket Elephant House Sanctuary 123 Nature & Wildlife Areas",
-            "REVOLUTION GYM PHUKET 200 Sports Camps & Clinics",
-            "Friendship Leather Wear 1 0.7 mi Factory Outlets",
-            "Kathu Waterfall 224 0.7 mi Waterfalls"
-        ]
+        "nearby_foodAndDrink1": "Biker's Corner Kata Beach Restaurant & Bar",
+        "nearby_foodAndDrink2": "Pizzeria Al Fiume",
+        "nearby_foodAndDrink3": "Mid Way Café Bar & Grill",
+        "nearby_activity1": "Phuket Wake Park",
+        "nearby_activity2": "Bangla Road",
+        "nearby_activity3": "Patong Beach"
     },
     {
         "activity_name": "Phuket FantaSea",
         "about_and_tags": null,
         "latitude": 7.956283,
         "longitude": 98.28729,
-        "start_time": "5:30 PM",
-        "end_time": "11:30 PM",
+        "start_time": "17:30:00",
+        "end_time": "23:30:00",
         "duration": 3,
         "reviews": [
             "An extremely overpriced and underwhelming show best avoided unless you have a toddler in the group. My daughter( 3 years) liked the fairies, the jumbos and the hens but the show is of 30 -40 mins. The buffet is horrible to say the least, a few colourful shops but if you have been to other kids entertainment parks e.g. disney/ universal etc there's not a lot to see other than that 30 mins show. There are a few photo ops sbut are quite expensive - at 1900 bht ticket (sgd 83) its more than what i pay for the universal ( sgd 75) and its no match.",
@@ -157,31 +100,12 @@
             "The location and ambiance is ok. The show is very average. The dinner is not worth the money. You can give it a miss if you have visited Kindom of Dreams at Gurugram,India. This is just 10% of it.",
             "So so sad.. we were so excited to go not really looking into what it was but soon as we got there we seen the elephants who looked so so sad then went through to the show and we were just sick all the way through. The show itself was good enough without all the animals brought on stage.. Im so glad Im from the UK and anything like this would not stand! I feel so bad I contributed to the animals abuse and definitely will be visiting the elephant sanctuary again before I leave and donating some money as like I say I just feel sick to the stomach and this will be on my mind heavily now Also just to add not just the elephants but all the animals they used were just totally unnecessary . You have to ask yourself why they dont allow phones into the theatre.. As no one would go!! We wish we would have read the reviews before going plus its not cheap!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Restaurant at Lillo Island Resort 1,035 0.3 mi $$ - $$$ • Seafood • Asian • Thai",
-            "Smile Bar 1,106 0.3 mi $$ - $$$ • Seafood • Barbecue • Asian",
-            "The Greek Tavern 333 0.2 mi $$ - $$$ • Mediterranean • Greek • Vegetarian Friendly",
-            "Pond Restaurant 344 0.3 mi $ • Seafood • European • Asian",
-            "Baan Mai 576 0.3 mi $$ - $$$ • French • European • Asian",
-            "Pine Beach Bar 605 0.5 mi $$ - $$$ • Bar • Pizza • Vegetarian Friendly",
-            "Devas' Lounge 107 0.4 mi $$$$ • Bakeries • Cafe • European",
-            "Pinto Restaurant 257 0.5 mi $$$$ • Pizza • Cafe • Asian",
-            "Tengoku 188 0.5 mi $$ - $$$ • Japanese • Sushi • Asian",
-            "Jaras Restaurant 215 0.5 mi $$$$ • Asian • Thai • Vegetarian Friendly"
-        ],
-        "best_nearby_attractions": [
-            "Carnival Magic 12 0.1 mi Amusement & Theme Parks",
-            "Kamala Beach 2,676 0.3 mi Beaches",
-            "Muslim Cemetery 2 0.2 mi Cemeteries",
-            "Baanchanghai Elephant Lovers 11 0.3 mi Nature & Wildlife Areas",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Green Elephant Sanctuary Park 2,522 2.2 mi Nature & Wildlife Areas",
-            "Tsunami Memorial Park 267 0.5 mi Points of Interest & Landmarks • Monuments & Statues",
-            "REVOLUTION GYM PHUKET 200 1.6 mi Sports Camps & Clinics",
-            "Phuket Elephant Nature Reserve 159 Nature & Wildlife Areas"
-        ]
+        "nearby_foodAndDrink1": "Restaurant at Lillo Island Resort",
+        "nearby_foodAndDrink2": "Smile Bar",
+        "nearby_foodAndDrink3": "The Greek Tavern",
+        "nearby_activity1": "Carnival Magic",
+        "nearby_activity2": "Kamala Beach",
+        "nearby_activity3": "Muslim Cemetery"
     },
     {
         "activity_name": "Merlin Divers - Kamala Diving Center",
@@ -190,8 +114,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "9:00 AM",
-        "end_time": "9:00 PM",
+        "start_time": "09:00:00",
+        "end_time": "21:00:00",
         "duration": null,
         "reviews": [
             "Phi Phi Island, King cruiser and Racha Noi was very nice. Everything was well organised from booking, transport, diving and return to the hotel. Excellent support before, during and after diving from divemaster/instructor Mr Pae. He was very helpful and during three days of diving, he assisted and helped in the best possible way. I really appreciated the diving in Phuket, and I give give Merlin Divers my best recommendations.",
@@ -205,9 +129,12 @@
             "Merlin Divers Phuket is a fantastic place with a inviting atmosphere. The owner and dive masters/instructors are incredibly welcoming and professional, making every dive experience enjoyable and safe. I highly recommend this dive center for anyone looking to explore the underwater world in Phuket!",
             "I arranged a 3-day open water diving course for me and my girlfriend very easily with Robert and he was really helpful and responsive. Our course was primarily led by Ulysse who was an absolutely fantastic instructor. We felt in very safe hands and thought he had a great style of teaching and was just a really nice guy! Everything went seamlessly and was expertly organised and all of the equipment we needed was provided. I would give my experience with Merlin Divers a 10/10 and would absolutely recommend them. In addition, our 4 dives were so much fun and we saw lots of sea life. We are both so happy to now be qualified!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Luxury Small Group Phi Phi Sunrise from Phuket by Simba Sea Trips",
@@ -231,9 +158,12 @@
             "The Simba sunrise tour was fabulous, well worth the early morning pick up time & definitely worth doing this tour!! So much delicious food from the breakfast at the marina to breakfast and one of the first to arrive at Maya bay so early in the morning. Snacks and drinks along the way & a beautiful Thai lunch back at the pool club! Snorkelling with baby sharks & so many nemo fish was a highlight!! Everything was so well organised. Huge thanks to MoMo, the captain and crew for getting us safely back to the pool club for a delicious lunch after the weather took an unexpected turn. They were all so professional and caring - thanks moMo for the head and neck massage - you are all amazing!!! It was great to spend the day with such a terrific small group of people from around the world - so much fun!!",
             "Outstanding small group excursion! Cant say enough about every bit of this tour. Fresh fruit, cold drinks, lovely Thai hospitality, perfect for a solo traveler. Hotel pick up was seamless, with attention to detail superb! The Thai lunch was a real treat!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Phuket City Tour: Karon View Point, Big Buddha, Wat Chalong",
@@ -257,9 +187,12 @@
             "Great tour , Everything was Organized and high informative , we never felt rushed and got to see all The main temple and view of the city . Loved my tour . Our tour guide a young man which I forgot his name was amazing as well , very nice and informative and funny as well. Took excellent pictures",
             "Perfect addition to our girls trip!!! Daisy was amazing! We truly enjoyed ourselves! The accommodations were top tier our bus driver was also amazing. The bus was so comfortable with charging and WiFi capabilities. We spent an adequate amount of time at each stop we had such a great time it was so much fun."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Love Diving Phuket",
@@ -268,8 +201,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "12:00 PM",
-        "end_time": "9:00 PM",
+        "start_time": "12:00:00",
+        "end_time": "21:00:00",
         "duration": null,
         "reviews": [
             "Had an excellent day out with my kids who are both certified but are still inexperienced Sam was awesome giving us a recap. Three dives at different locations, so this is a full day commitment but totally worth it. The crew were great and we had meals throughout the day, including breakfast and coffee, lunch, and more. Again, a great experience had by all and totally worth doing if you can commit a day.",
@@ -283,9 +216,12 @@
             "I dove Phi Phi. It was a 3 dive event with 2 dives at Phi Phi. I am an Advanced Open Water diver who has dove in numerous locations in the world over my many years of diving. Love Diving was very well organized and efficient. All the staff during the dives and at all other times were excellent to deal with. The boat was great along with the meals. They also arranged transport directly from our hotel with a great driver. During the dives I saw marine creatures that I have not seen before and I was extremely pleased with the conditions of the reefs and marine life we encountered. I would definitely recommend Love Diving to anyone Wishing to dive. Steve from Canada",
             "I did my open water course with Frank. Had an absolute blast. Saw tons of interesting fish. Definitely recommend to any one interested. Ask for Frank!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Elephant Jungle Sanctuary Phuket",
@@ -294,8 +230,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "6:30 AM",
-        "end_time": "10:00 PM",
+        "start_time": "06:30:00",
+        "end_time": "22:00:00",
         "duration": null,
         "reviews": [
             "WOW! EXPERIENCE OF A LIFETIME. Elephant Jungle Sanctuary has 4 sites around Thailand. At this site, they have rescued 6 adult elephants from logging and the entertainment industry. Each elephant has their own caretaker and the love/respect they show these animals is impressive. We did the half day experience. Got to feed the elephants lots of watermelon. Then we gave them a mud bath. Bring a swimsuit so you can get in the mud, swimming hole and showers with the elephants. Bring dry clothes. The shower/bathroom facilities are very clean. Getting right up to the elephants without bars or fences was unbelievable. They are such magnificent, gentle creatures. Kevin and Eddie were warm, friendly and so personable. Great instruction on how to interact with the elephants. They took lots of photos/videos with our cameras. They also took beautiful photos you can download from Facebook. Lunch was also delicious. You would think this was just an afterthought. Not here. Tasty pad Thai chicken, Tom Yum Gai (chicken soup with coconut milk) and sweet/sour chicken. Highly recommend for anyone who loves animals and wants to experience elephants up close and personal.",
@@ -309,9 +245,12 @@
             "What an amazing experience!! Both guides were well spoken, entertaining and accomodating. What a beautiful way to start a morning in Phuket. Included brief intro, feeding the elephants, making rice balls and then feeding the elephants, mud bath with the elephants, scrubbing the mud off, shower with elephant's, paper making demo using elephant poop, pad Thai demo and finally lunch! All in all a wonderful experience with many memories. Photographer on site and pics are uploaded on Facebook which you can download the next day highly recommended!!!",
             "Fed the elephants at this lovely sanctuary for rescued elephants in Thailand. Lovely people, especially our guide K! Highly recommended"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Phang Nga Bay Sea Cave Canoeing & James Bond Island by Big Boat",
@@ -335,17 +274,20 @@
             "I excursion was absolutely wonderful. Pick up was on time and comfortable then upon arriving we were welcomed by Tony and his crew and given the BEST day!!! We canoe twice into incredible caves on Panak Island and Hong Island (than you to Sun he was amazing kayaking us around and giving us details about the rock formations) we paddle boarded swam in the warm waters had a delicious buffet lunch on the boat which was soo nice then we went to James Bond Island got to experience a long tail boat and swim then when we got back on the boat Tony and his crew were so nice to give me birthday cake and desserts to celebrate my birthday incredibly perfect trip I loved that I we chose this specific boat tour it couldnt have gone better",
             "We had really good experiences with Amazing Tour specially Tony look after us and very friendly and helpful explaining every step through the journey. I highly recommend Amazing Tours to anyone"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Naka Market",
         "about_and_tags": null,
         "latitude": 7.880728,
         "longitude": 98.36575,
-        "start_time": "4:00 PM",
-        "end_time": "10:00 PM",
+        "start_time": "16:00:00",
+        "end_time": "22:00:00",
         "duration": 2,
         "reviews": [
             "We actually thought we were going to the Old Phuket Town market, but turns out the Naka market (as recommended by some people we met in Phuket) is a different market. It's huge. There are many stores selling everything from clothing to souvenirs, and a wide range of food stalls selling anything you can imagine. It's quite a festive market, but I do feel like I missed out on the Old Phuket Town Sunday market where we were meant to be.",
@@ -359,31 +301,12 @@
             "Terrible dont go if you care about animals! They have puppies, kittens, rabbits and other animals, stuck in metalbar cages 30x30 cm big, stacked ok eachother in over 40 celsius. Not having water or food! Animal abuse, dont go here and support this!",
             "Great family friendly experience with so many to offer. Lots of street food shops and nice life music there. Great choice!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Baikingu Japanese Buffet Garden Restaurant 110 0.6 mi $$ - $$$ • Japanese • Sushi • Asian",
-            "Su Va Na Phuket 253 0.6 mi $$$$ • European • Fusion • Healthy",
-            "Little Edo 12 0.3 mi $$ - $$$ • Sushi • Japanese Fusion",
-            "Wizard Burgers 6 0.2 mi Steakhouse • International • Thai • Fusion",
-            "Havana Bar & Restaurant 9 0.2 mi $$ - $$$ • Italian • Brew Pub • Bar",
-            "Banputalay Phuket 3 0.2 mi Seafood",
-            "Youkillme Bakery 1 178 ft Bakeries • European • Thai • Portuguese",
-            "Tumz Seafood Bar & Grill 1 183 ft $$ - $$$ • Seafood • Thai",
-            "Edo Omakase Phuket 1 0.3 mi Seafood • Sushi",
-            "Bukit Cuppa 2 0.3 mi $ • Dessert • Thai"
-        ],
-        "best_nearby_attractions": [
-            "Phuket Weekend Night Market 506 0.8 mi Flea & Street Markets",
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Big Buddha Phuket 16,834 Points of Interest & Landmarks • Religious Sites",
-            "Central Phuket 1,554 0.8 mi Shopping Malls",
-            "Andamanda Phuket 948 1.7 mi Amusement & Theme Parks • Water Parks",
-            "Trimurti Shrine 75 0.5 mi Religious Sites • Monuments & Statues",
-            "Khao Rang Hill View Point 550 1.3 mi Mountains • Lookouts",
-            "Kerchor Elephant Family Phuket 49 1.5 mi Nature & Wildlife Areas",
-            "Unit 27 Total Conditioning & CrossFit Phuket 256 2.4 mi Sports Camps & Clinics"
-        ]
+        "nearby_foodAndDrink1": "Baikingu Japanese Buffet Garden Restaurant",
+        "nearby_foodAndDrink2": "Su Va Na Phuket",
+        "nearby_foodAndDrink3": "Little Edo",
+        "nearby_activity1": "Phuket Weekend Night Market",
+        "nearby_activity2": "Bangla Road",
+        "nearby_activity3": "Patong Beach"
     },
     {
         "activity_name": "️ Phuket Private Instagram Tour: All-Inclusive",
@@ -407,9 +330,12 @@
             "We had a great time! We had Patty as our companion and all the pictures are superb. Very knowledgeable about the places, Thailand and many more that no one would probably know about. She is one of a kind and would recommend her with family and friends. She took care of us and very fun to be with, no rush at the locations and accommodated all our requests! 11/10 for sure!",
             "This is a great experience! If youre considering doing it, you should! Natty was my guide, she was awesome and made sure I enjoyed my time. Also, the photos!!!!! She made sure I got some good flicks, Im truly grateful. Thank you so much"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Soi Dog Foundation",
@@ -431,31 +357,12 @@
             "We had a wonderful time hearing about the Soi Dog Foundation from our guide, Silvia! We were just in Phuket for a day and werent sure what to do near the airport, but Im so glad that we stumbled upon soi dog. It was encouraging after seeing so many stray animals on our trip to hear about the efforts this organization takes not only to treat and rehabilitate injured and ill animals, but also the education they offer the community about animal care! Not to mention it was so fun to help socialize the puppies! We will definitely stay connected to Soi Dog Foundation from now on.",
             "This a beautiful place to visit and support. It re inspires faith in humanity. It makes me so happy to hear of what this organisation has achieved and continues to achieve to make the world a better place for the dogs and cats of Thailand and other countries. An absolute must to visit in Phuket. I would definitely recommend the amazing tour."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Suan Bua Restaurant 10 0.3 mi $$ - $$$ • Thai",
-            "The White Tree Restaurant 53 0.6 mi $ • Thai • Vegetarian Friendly • Vegan Options",
-            "Maikhao Memory Bar & Restaurant 5 0.5 mi $ • International • Thai • Russian",
-            "Sunshines Steak 9 0.6 mi Fast Food",
-            "Mix Cafe 12 0.7 mi $ • European • Asian • Thai",
-            "The Dome Maikhao Restaurant 1 0.6 mi Pizza • Seafood • Thai • Russian",
-            "Island of Seafood Delivery & Restaurant 13 0.6 mi $$ - $$$ • Seafood",
-            "Mix Cafe 3 0.7 mi $ • European • Thai • Russian",
-            "The Old Maikhao Restaurant 76 0.9 mi $ • Bar • Seafood • Asian",
-            "Yenjai Restaurant 68 1 mi $$ - $$$ • Thai • Vegetarian Friendly • Vegan Options"
-        ],
-        "best_nearby_attractions": [
-            "Phuket Elephant Care 1,218 Nature & Wildlife Areas",
-            "Splash Jungle Waterpark 905 0.9 mi Water Parks",
-            "Mai Khao Beach 529 2.2 mi Beaches",
-            "Naiyang Beach 1,051 2.8 mi Beaches",
-            "Takeoff Landing 54 1.3 mi Points of Interest & Landmarks • Lookouts",
-            "Nai Thon Beach 305 Beaches",
-            "Sirinat National Park 106 2.1 mi National Parks • Beaches",
-            "King Power Phuket Airport 27 1.5 mi Airport Shops",
-            "Wat Mongkol Wararam 15 2.5 mi Religious Sites",
-            "Saphan Sarasin Bridge 193 Points of Interest & Landmarks • Bridges"
-        ]
+        "nearby_foodAndDrink1": "Suan Bua Restaurant",
+        "nearby_foodAndDrink2": "The White Tree Restaurant",
+        "nearby_foodAndDrink3": "Maikhao Memory Bar & Restaurant",
+        "nearby_activity1": "Phuket Elephant Care",
+        "nearby_activity2": "Splash Jungle Waterpark",
+        "nearby_activity3": "Mai Khao Beach"
     },
     {
         "activity_name": "Phuket Thai Cooking Class with Market Tour Option",
@@ -479,9 +386,12 @@
             "Class was amazing leant so much about Thai food and food we cooked tasted great. but we both got food poisoning and were very sick afterwards",
             "My family loved every bit of this experience. It felt like we were on a cooking show, very clean and organized process. Definitely recommend the earlier 11:00 am time slot for a fun market tour and fruit tasting included! The meals were simple to make and the staff were open to customizing spice and dietary preferences. Come by with your friends and family!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "PPKK Tour Service",
@@ -505,17 +415,20 @@
             "A very prompt, professional and reliable service provider. Will definitely keep using their services even in future.",
             "PPKK Tour Services was the best tour services ever in Phuket, Thailand. From Airport transfer to our hotel , A day Tour around Phuket with Panya, 1 day island hopping lunch buffet included, an afternoon program with Green Elephant Sanctuary Park and our adventure night to Phuket FantaSea Show and our airport drop-off. Thank you so much for the memorable holiday. we look forward to using your services next time in Phuket."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Central Phuket",
         "about_and_tags": null,
         "latitude": 7.891505,
         "longitude": 98.36783,
-        "start_time": "10:00 AM",
-        "end_time": "10:00 PM",
+        "start_time": "10:00:00",
+        "end_time": "22:00:00",
         "duration": 2,
         "reviews": [
             "Damn, this place is really big, I might say enormous. Everything you need was in there, Adidas, Balenciaga, Gucci, Liverpool store and sports. For me, my favorite thing is the football store which contains lots of team shirts and shoes, I bought a France kit and it was great.",
@@ -529,31 +442,12 @@
             "An average experience for the average consumer. If you're looking for typical, run-of-the-mill clothing and don't mind splurging on overpriced luxury items, then this place will suit your needs. The mall boasts a variety of stores catering to the basic and less adventurous shopper, but unfortunately, it lacks that special something to make it stand out in a crowd of similar shopping centers. While there are occasional sparks of creativity in the mall's visual design and a commendable effort to embrace modernity, the touchscreen maps seem more like a hindrance than a help. Navigating the two buildings requires a fair amount of walking, and the somewhat unintuitive maps can leave you feeling a bit lost. On the bright side, there are convenient pickup locations for ride-sharing apps and taxis, making transportation a breeze. However, the outdated bathrooms are a disappointment, and the prevalence of knockoff goods vendors and poorly managed stores is hard to ignore. The absence of gaming shops, modern hobby stores, and a dedicated electronics store adds to the overall sense of mediocrity. This mall has its merits, undoubtedly, but they come at a (high) cost. It's a decent place to shop if you have no other options nearby, but the lack of uniqueness, coupled with a less-than-stellar ratio of quality offerings, leaves much to be desired. If convenience is your main concern and you're willing to overlook some drawbacks, then this mall might just do the job for you. Or if you just don't care and only want to consume, here is the perfect place my consuming friend. Be a consumer to your heart's desire.",
             "Lots of international brands here. Food mall food options are sufficient. Also a huge supermarket with great variety. Sweetest mango I have tried across Phuket in the small shops. I just think that there should be more restaurant options serving Thai food. Would have been a better experience if so but of course you can go to old town after shopping."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Su Va Na Phuket 253 0.2 mi $$$$ • European • Fusion • Healthy",
-            "Muteki by Mugendai : Central Phuket 39 0.1 mi $$ - $$$ • Japanese • Sushi • Asian",
-            "On the Table, Tokyo Cafe' 55 347 ft $$ - $$$ • Japanese • Asian • Vegetarian Friendly",
-            "Oishi Eaterium Phuket 39 0.2 mi $$$$ • Japanese • Sushi • Asian",
-            "The Charm Dining Gallery 28 0.3 mi $$ - $$$ • Asian • Thai • Vegetarian Friendly",
-            "Fuji Japanese Restaurant - Central Phuket 146 263 ft $$ - $$$ • Japanese • Sushi • Asian",
-            "Lucky 13 Sandwich - Central Floresta 30 0.1 mi $ • Cafe • International • European",
-            "Maimorn Cuisine 39 0.2 mi $$ - $$$ • Seafood • Asian • Thai",
-            "Tai Omakase 22 0.1 mi $$ - $$$ • Japanese • Bar • Seafood",
-            "Wine Connection Deli & Bistro - Central Phuket 335 229 ft $$ - $$$ • Italian • Pizza • European"
-        ],
-        "best_nearby_attractions": [
-            "Tribhum Theme Park 61 0.2 mi Amusement & Theme Parks",
-            "Aquaria Phuket Thailand 75 0.1 mi Aquariums",
-            "Trimurti Shrine 75 0.2 mi Religious Sites • Monuments & Statues",
-            "50FLY - Trampoline Club 21 0.3 mi Sports Complexes",
-            "Andamanda Phuket 948 0.9 mi Amusement & Theme Parks • Water Parks",
-            "Naka Market 1,984 0.8 mi Flea & Street Markets",
-            "Kerchor Elephant Family Phuket 49 0.9 mi Nature & Wildlife Areas",
-            "Khao Rang Hill View Point 550 0.8 mi Mountains • Lookouts",
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches"
-        ]
+        "nearby_foodAndDrink1": "Su Va Na Phuket",
+        "nearby_foodAndDrink2": "Muteki by Mugendai : Central Phuket",
+        "nearby_foodAndDrink3": "On the Table, Tokyo Cafe'",
+        "nearby_activity1": "Tribhum Theme Park",
+        "nearby_activity2": "Aquaria Phuket Thailand",
+        "nearby_activity3": "Trimurti Shrine"
     },
     {
         "activity_name": "Kamala Beach",
@@ -575,39 +469,20 @@
             "Kamala Beach is a serene paradise, ideal for those seeking tranquility. With soft sands and gentle waves, it's perfect for families and couples alike. Enjoy a peaceful escape amidst stunning natural beauty.",
             "Too many tourists. Too many activity offers, ranging from horse riding and water jets to speed boat tours and souvenirs. The restaurants offer pizza and spring rolls, the market is a fake and the river running down to the beach stinks from fish garbage. We didnt like it at all."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Restaurant at Lillo Island Resort 1,035 426 ft $$ - $$$ • Seafood • Asian • Thai",
-            "Smile Bar 1,106 345 ft $$ - $$$ • Seafood • Barbecue • Asian",
-            "Pine Beach Bar 605 0.4 mi $$ - $$$ • Bar • Pizza • Vegetarian Friendly",
-            "Pond Restaurant 344 0.1 mi $ • Seafood • European • Asian",
-            "Jaras Restaurant 215 0.4 mi $$$$ • Asian • Thai • Vegetarian Friendly",
-            "Pinto Restaurant 257 0.4 mi $$$$ • Pizza • Cafe • Asian",
-            "Devas' Lounge 107 0.4 mi $$$$ • Bakeries • Cafe • European",
-            "Baan Mai 576 0.3 mi $$ - $$$ • French • European • Asian",
-            "Tengoku 188 0.4 mi $$ - $$$ • Japanese • Sushi • Asian",
-            "Big Boys’ Burger Club - Kamala 561 0.5 mi $$ - $$$ • American • Fast Food • Vegetarian Friendly"
-        ],
-        "best_nearby_attractions": [
-            "Phuket FantaSea 8,344 0.3 mi Amusement & Theme Parks",
-            "Carnival Magic 12 0.3 mi Amusement & Theme Parks",
-            "Tsunami Memorial Park 267 0.4 mi Points of Interest & Landmarks • Monuments & Statues",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Muslim Cemetery 2 0.4 mi Cemeteries",
-            "Green Elephant Sanctuary Park 2,522 2.4 mi Nature & Wildlife Areas",
-            "Laem Sing Beach 496 0.8 mi Beaches",
-            "REVOLUTION GYM PHUKET 200 1.6 mi Sports Camps & Clinics",
-            "Phuket Elephant Nature Reserve 159 Nature & Wildlife Areas"
-        ]
+        "nearby_foodAndDrink1": "Restaurant at Lillo Island Resort",
+        "nearby_foodAndDrink2": "Smile Bar",
+        "nearby_foodAndDrink3": "Pine Beach Bar",
+        "nearby_activity1": "Phuket FantaSea",
+        "nearby_activity2": "Carnival Magic",
+        "nearby_activity3": "Tsunami Memorial Park"
     },
     {
         "activity_name": "Phuket Elephant Care",
         "about_and_tags": null,
         "latitude": 8.060286,
         "longitude": 98.2842,
-        "start_time": "8:00 AM",
-        "end_time": "4:00 PM",
+        "start_time": "08:00:00",
+        "end_time": "16:00:00",
         "duration": 2,
         "reviews": [
             "Everyone was really friendly including the elephants. We had so much fun and dirty. I highly recommend this attraction.",
@@ -621,31 +496,12 @@
             "I went on a solo trip to the half day tour. An experience ill never forget. My family is annoyed because they missed out. I've been to Thailand 3 times and never interacted or done anything with elephants purely because I couldn't find an ethical one. After research, I thought I'd try this one. Absolutely amazing and would come again. The half day experience was fantastic finished off with a lovely lunch catered to all preferences. Not only that, there were many little things considered that some tours forget (and tourists) for example, a plastic bag for our wet clothes if we wanted etc. A trip worth doing!!",
             "Amazing visit. Loved feeding and loving the elephants. Even in the rain, it was a wonderful experience. Would visit again"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Shameena Restaurant and Lounge 260 0.4 mi $$ - $$$ • Asian • Thai • Vegetarian Friendly",
-            "Vero Italian Trattoria and Wine Bar 667 0.6 mi $$$$ • Italian • Steakhouse • Pizza",
-            "Macarona - European Cuisine & Pizzeria 253 0.4 mi $$ - $$$ • Italian • Pizza • European",
-            "The Hill 14 0.3 mi International • Asian • Thai",
-            "Naithon Beach Club 82 0.4 mi $$ - $$$ • Seafood • European • Asian",
-            "Baan Phutawan 62 0.5 mi $ • Italian • Asian • Thai",
-            "Coconut Tree Restaurant and Bar 98 0.4 mi $ • Seafood • Asian • Thai",
-            "No. 24 Bar & Restaurant 239 0.4 mi $$ - $$$ • Bar • Seafood • Asian",
-            "Baan Phutawan Seafood 6 0.4 mi Pizza • Cafe • Seafood • Thai",
-            "Wiwan 112 0.4 mi $$ - $$$ • Bar • Seafood • Asian"
-        ],
-        "best_nearby_attractions": [
-            "Nai Thon Beach 305 0.5 mi Beaches",
-            "Soi Dog Foundation 1,529 Nature & Wildlife Areas",
-            "Green Elephant Sanctuary Park 2,522 Nature & Wildlife Areas",
-            "Naiyang Beach 1,051 2.2 mi Beaches",
-            "REVOLUTION GYM PHUKET 200 Sports Camps & Clinics",
-            "Bang Tao Beach 971 Beaches",
-            "Layan Beach 102 2 mi Points of Interest & Landmarks • Beaches",
-            "Surin Beach 1,939 Beaches",
-            "Sutai Muay Thai Phuket 73 Sports Camps & Clinics",
-            "Wat Phra Thong 117 Historic Sites • Points of Interest & Landmarks"
-        ]
+        "nearby_foodAndDrink1": "Shameena Restaurant and Lounge",
+        "nearby_foodAndDrink2": "Vero Italian Trattoria and Wine Bar",
+        "nearby_foodAndDrink3": "Macarona - European Cuisine & Pizzeria",
+        "nearby_activity1": "Nai Thon Beach",
+        "nearby_activity2": "Soi Dog Foundation",
+        "nearby_activity3": "Green Elephant Sanctuary Park"
     },
     {
         "activity_name": "Phuket Elephant Sanctuary",
@@ -669,9 +525,12 @@
             "The canopy walk was perfect for us. We got a good view of the elephants and being high in the air, there werent a lot of mosquitos. Feeding the elephants at the end was just enough time to be close to the elephants.",
             "Amazing experience, we enjoyed the encounter with the elephants. This place is a real sanctuary and they show a real love for the animals."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Phuket SRC Travel",
@@ -680,8 +539,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "9:00 AM",
-        "end_time": "11:00 PM",
+        "start_time": "09:00:00",
+        "end_time": "23:00:00",
         "duration": null,
         "reviews": [
             "We booked SRC Travel taxi 2 months before we came to Phuket and were sent booking confirmation by Wotsap. On landing someone was stood with a board in arrivals with our name on. Just over an hour to Kata (No traffic) and 2 weeks later picked us up after contacting us the day before for the return leg. No problems at all all ran smooth and recommend to anyone visiting Phuket",
@@ -695,9 +554,12 @@
             "Great service, professional, and reliable! Island hopping tour was great too, 100% would recommend to all. Would seek your service when we are back in Phuket!",
             "Amazing support, always on time and very helpful and kind! Would only recommend! We could easily contact per phone or whatsapp and organize everything smoothly."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Phuket Sail Tours",
@@ -706,8 +568,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "6:00 AM",
-        "end_time": "8:00 PM",
+        "start_time": "06:00:00",
+        "end_time": "20:00:00",
         "duration": null,
         "reviews": [
             "Weve joined the James Bond Sunset Tour on Big Boat a couple of times. This time round, we brought along 2 friends and they really enjoyed it. We had plenty of space to relax on the boat and drinks and snacks were available onboard. Alex is our personal guide for canoeing. It was a great experience as the caves were really dark, and when we were out in the open. we were greeted with the most beautiful Hong and mangrove. At James Bond Island, we went onshore to take some beautiful photos without the crowds and Alex helped to take some really nice pictures. We had a delicious dinner cooked by the chef on board, I like especially the chicken curry in coconut milk and the tom yum soup. We watched the lovely sunset over Phang Nga bay. We were blessed with good weather today. Thanks, Capt. Mark, Jack, Alex and team, we had the best times in Phuket. We really look forward to another great tour with PST.",
@@ -721,17 +583,20 @@
             "Wonderful afternoon and evening boat trip which was so enjoyable. Thanks to Jack and the excellent team a brilliant day was had. I would thoroughly recommend this company. Excellent service, great value for money and everyone extremely friendly. A small number of fellow passengers (less than 15) which made the experience great, lovely food served on board and some amazing views along the way. Great to visit the famous James Bond Island and to visit several other beauty spots and even travel in a kayak through some amazing caves!! Chilled drinks served throughout the tour and lots of fascinating information shared throughout the day. Hotel to boat departure and return point arranged through the company as well. A brilliant day with some brilliant experiences!!! I would thoroughly recommend. Thank you.",
             "The views were amazing loved that there was only a maximum of 18 people on board. Captain Jack kept us informed throughout the entire trip. Especially enjoyed the canoeing through the caves. Would highly recommend this boat tour it ticks all the boxes with plenty to see."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Big Buddha Phuket",
         "about_and_tags": null,
         "latitude": 7.827575,
         "longitude": 98.31284,
-        "start_time": "8:00 AM",
-        "end_time": "6:30 PM",
+        "start_time": "08:00:00",
+        "end_time": "18:30:00",
         "duration": 1,
         "reviews": [
             "Very peaceful place to visit. Weather was amazing. My kids enjoyed it very much. Would recommend to everyone religious and non religious",
@@ -745,39 +610,20 @@
             "Impressive, definetely worth to be visited. Way too is not too long and not too hard by car. View from there and the experience to see the statue itself worth value and fatigue!",
             "A divine and beautiful place to visit and experience the rich culture. Good view of the city from up there. One recommended place to visit."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Mountain Breeze Bar & Resturant 169 0.4 mi $ • Seafood • Thai • Vegetarian Friendly",
-            "Red Duck Restaurant 2,348 0.6 mi $$ - $$$ • Thai • Vegetarian Friendly • Vegan Options",
-            "Garden Nakkarach Restaurant 7 48 ft Thai",
-            "Big Buddha Art Cafe & Restaurant 2 0.3 ft Thai • Diner • Healthy • Soups",
-            "Royal Kata Number 6 Restaurant 60 0.5 mi $$ - $$$ • Indian • Seafood • Thai",
-            "Maybelle's Coffee Garden 54 0.6 mi $$ - $$$ • Cafe • European • Thai",
-            "Baan Poo Doo Lay 38 0.5 mi $$ - $$$ • Asian • Thai • Vegetarian Friendly",
-            "The Jungle Restaurant and Bar 59 0.7 mi $$ - $$$ • Seafood • Asian • Thai",
-            "Pomodoro Pizza Restaurant 551 0.8 mi $$ - $$$ • Italian • Pizza • Mediterranean",
-            "Santosa Vegan Restaurant 144 0.7 mi $$ - $$$ • Vegetarian Friendly • Vegan Options • Gluten Free Options"
-        ],
-        "best_nearby_attractions": [
-            "Bangla Road 20,991 Points of Interest & Landmarks",
-            "Patong Beach 17,129 Points of Interest & Landmarks • Beaches",
-            "Swimming School by Alexey Zinoviev 19 0.6 mi Sports Camps & Clinics",
-            "Kata Beach 8,322 1.1 mi Beaches",
-            "Kata Noi Beach 2,845 1.7 mi Beaches",
-            "Kata Night Market 154 0.9 mi Flea & Street Markets",
-            "Unit 27 Total Conditioning & CrossFit Phuket 256 2.8 mi Sports Camps & Clinics",
-            "Chaithararam Temple (Wat Chalong) 3,503 2.1 mi Points of Interest & Landmarks • Lookouts",
-            "Karon Viewpoint 2,876 2.2 mi Lookouts",
-            "Karon Beach 7,034 2.1 mi Beaches"
-        ]
+        "nearby_foodAndDrink1": "Mountain Breeze Bar & Resturant",
+        "nearby_foodAndDrink2": "Red Duck Restaurant",
+        "nearby_foodAndDrink3": "Garden Nakkarach Restaurant",
+        "nearby_activity1": "Bangla Road",
+        "nearby_activity2": "Patong Beach",
+        "nearby_activity3": "Swimming School by Alexey Zinoviev"
     },
     {
         "activity_name": "Phuket Simon Cabaret",
         "about_and_tags": null,
         "latitude": 7.878892,
         "longitude": 98.29203,
-        "start_time": "5:00 PM",
-        "end_time": "11:30 PM",
+        "start_time": "17:00:00",
+        "end_time": "23:30:00",
         "duration": null,
         "reviews": [
             "The set was awesome and each performance was energetic and well choreographed. The only solo performer by the big lady / ladyboy was so amazing. Full of comic moments and good crowd engagement",
@@ -791,31 +637,12 @@
             "Overall a good experience. The show is a bit sexual to bring kids to. The lip syncing could get better almost cringable. One of the performers could sing, would be nice to have a non lip sync number. The dancing/performance was mediocre however the costumes were beautiful. Would be fun if the dancing was more advanced. It was a fun experience but not something I would do again",
             "I quite enjoyed the performance but the photo scam at the end of the show is shameful behaviour by the performers. If theyre not getting paid enough they need to take this up with their employers. Not the audience who have already put their hands in their pockets. For this reason I will not be recommending this show to friends and family who travel to Thailand."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Le Brooklyn Patong 445 0.2 mi $ • French • American • Halal",
-            "The Zula Phuket Turkish Restaurant & Cafè Patong 198 0.1 mi $$ - $$$ • Pizza • Mediterranean • Thai",
-            "Pizza Lab Patong 52 0.2 mi $$ - $$$ • Italian • Pizza • Romana",
-            "Level Restaurant phuket 109 0.2 mi $$ - $$$ • French • Thai • Grill",
-            "I Kroon Cafe & Hotel 737 0.5 mi $ • Cafe • European • Asian",
-            "Le Touareg 73 0.3 mi $ • Moroccan • Mediterranean • Middle Eastern",
-            "Kolobok 185 0.4 mi $$ - $$$ • European • Russian • Uzbek",
-            "King Kong Seafood 122 0.4 mi $ • Asian • Thai • Vegetarian Friendly",
-            "Happy Fish 53 0.2 mi $ • European • Thai • Vegetarian Friendly",
-            "Coffee Mania 213 0.2 mi $$ - $$$ • Cafe • European • Australian"
-        ],
-        "best_nearby_attractions": [
-            "Malin Plaza Patong 523 0.3 mi Flea & Street Markets",
-            "Bangla Road 20,991 1.1 mi Points of Interest & Landmarks",
-            "Patong Beach 17,129 1.2 mi Points of Interest & Landmarks • Beaches",
-            "Galaxy Boxing Stadium 3 0.3 mi Sports Complexes",
-            "Apichart art gallery 25 0.3 mi Art Galleries",
-            "Happy Kids Club Phuket 5 0.4 mi Playgrounds",
-            "Big Buddha Phuket 16,834 Points of Interest & Landmarks • Religious Sites",
-            "Banana Beach 428 1 mi Beaches",
-            "Patong Inn Art 120 1 mi Art Galleries",
-            "Dragon Night Market 23 0.4 mi Flea & Street Markets"
-        ]
+        "nearby_foodAndDrink1": "Le Brooklyn Patong",
+        "nearby_foodAndDrink2": "The Zula Phuket Turkish Restaurant & Cafè Patong",
+        "nearby_foodAndDrink3": "Pizza Lab Patong",
+        "nearby_activity1": "Malin Plaza Patong",
+        "nearby_activity2": "Bangla Road",
+        "nearby_activity3": "Patong Beach"
     },
     {
         "activity_name": "Old Phuket Town",
@@ -837,31 +664,12 @@
             "Was a little disappointed. Wasnt what we expected. Not many bars to stop for a drink. Was really really busy and hard to find somewhere to eat. Buildings were nice but wouldnt recommend",
             "Lively Phuket Old Town is known for brightly painted, century-old Sino-Portuguese townhouses, with a well-preserved row along Soi Rommanee. Main street Thalang Road has stores selling artisanal ice cream and batik fabrics and a Sunday market for souvenirs and street food like fried banana. The ThaiHua Museum features exhibits on Chinese immigrant culture, and Jui Tui Shrine displays colorful statues of Chinese gods"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Day & Night of Phuket 872 0.2 mi $$ - $$$ • Steakhouse • Bar • European",
-            "Surf and Turf by Soul Kitchen 329 0.1 mi $$ - $$$ • European • Contemporary • Fusion",
-            "The Neighbors Cafe 801 413 ft $ • American • Cafe • International",
-            "Amore Mexican Tapas & Bar 228 525 ft $ • Mexican • Vegetarian Friendly • Vegan Options",
-            "Rose Espresso 203 0.2 mi $$ - $$$ • Dessert • Cafe • European",
-            "Kopitiam by Wilai 1,187 441 ft $ • Asian • Thai • Vegetarian Friendly",
-            "Flavor Phuket 195 329 ft $$ - $$$ • European • Vegetarian Friendly • Gluten Free Options",
-            "Piset Restaurant Phuket 182 0.3 mi $$ - $$$ • Seafood • Asian • Thai",
-            "OSOT Trattoria & Pizzeria 286 0.3 mi $$ - $$$ • Italian • Pizza • European",
-            "Efe Old Town 63 503 ft $$ - $$$ • Mediterranean • Barbecue • European"
-        ],
-        "best_nearby_attractions": [
-            "Soi Romanee 21 193 ft Scenic Walking Areas",
-            "Sunday Walking Street Market (Lard Yai) 523 0.1 mi Flea & Street Markets",
-            "Museum Phuket 28 0.1 mi History Museums",
-            "Thavorn Phuket Museum 17 0.1 mi History Museums",
-            "Phuket 3D Museum 1,345 0.2 mi Speciality Museums • Children's Museums",
-            "Wat Mongkol Nimit 29 0.2 mi Religious Sites",
-            "72nd Anniversary Queen Sirikit Park 44 0.2 mi Parks",
-            "Phuket Thaihua Museum 168 0.2 mi Speciality Museums",
-            "Limelight Avenue 66 0.2 mi Shopping Malls",
-            "Phuket Philatelic Museum 23 0.2 mi Speciality Museums"
-        ]
+        "nearby_foodAndDrink1": "Day & Night of Phuket",
+        "nearby_foodAndDrink2": "Surf and Turf by Soul Kitchen",
+        "nearby_foodAndDrink3": "The Neighbors Cafe",
+        "nearby_activity1": "Soi Romanee",
+        "nearby_activity2": "Sunday Walking Street Market (Lard Yai)",
+        "nearby_activity3": "Museum Phuket"
     },
     {
         "activity_name": "RK Fashions and Tailors",
@@ -883,31 +691,12 @@
             "I know the owners now for years. Every time I am getting my suits done I am impressed by their passion, capabilities and quality. It is an art to maintain the highest level of quality over such a long period. Suits and Shirts that I have used for more than 5 years are still look and feel like new.A worthwhile invest with a very good return",
             "RK is best on service and timing to have a legitimate cut qualified on there cotton. Highly recommended for an effective, and superior cut from any shop in town (Patong). Thank you very much for your awesome product and service."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Big Boys' Burger Club - Patong Beach 228 389 ft $$ - $$$ • American • Grill",
-            "Hern Coffee And Bistro 1,939 0.2 mi $$ - $$$ • Cafe • European • Asian",
-            "Kan's Haus Cafe & Bistro 551 0.2 mi $$ - $$$ • Bar • Cafe • Asian",
-            "Climax Poolside Bar & Grill 1,457 0.2 mi $$ - $$$ • Asian • Thai • Fusion",
-            "Coco Copper Bistro and Beachbar 508 0.2 mi $$ - $$$ • Bar • Pizza • Seafood",
-            "Paname Brasserie Phuket 329 0.2 mi $$ - $$$ • Pizza • European • Asian",
-            "Amritsr Phuket Beach Road 955 0.2 mi $$ - $$$ • Indian • Asian • Vegetarian Friendly",
-            "Bubbles Restaurant 340 0.2 mi $$ - $$$ • Seafood • Barbecue • Grill",
-            "Cafe de Paris 1,019 332 ft $$ - $$$ • French • Steakhouse • International",
-            "Chou Chou Deli Shop 254 0.2 mi $$ - $$$ • Dessert • French • Deli"
-        ],
-        "best_nearby_attractions": [
-            "Banana Beach 428 0.1 mi Beaches",
-            "Bangla Road 20,991 0.2 mi Points of Interest & Landmarks",
-            "Patong Inn Art 120 0.1 mi Art Galleries",
-            "Banana Walk 48 525 ft Shopping Malls",
-            "Patong Beach 17,129 0.4 mi Points of Interest & Landmarks • Beaches",
-            "Beloved tattoo 6 0.1 mi Art Galleries",
-            "Central Patong 85 0.2 mi Shopping Malls",
-            "Jungceylon 7,229 0.2 mi Shopping Malls",
-            "Danze Fantasy Theatre 135 0.2 mi Theaters",
-            "Moulin Rose Carabet Show 7 0.2 mi Cabarets"
-        ]
+        "nearby_foodAndDrink1": "Big Boys' Burger Club - Patong Beach",
+        "nearby_foodAndDrink2": "Hern Coffee And Bistro",
+        "nearby_foodAndDrink3": "Kan's Haus Cafe & Bistro",
+        "nearby_activity1": "Banana Beach",
+        "nearby_activity2": "Bangla Road",
+        "nearby_activity3": "Patong Inn Art"
     },
     {
         "activity_name": "Phuket Dive Tours",
@@ -916,8 +705,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "9:00 AM",
-        "end_time": "8:00 PM",
+        "start_time": "09:00:00",
+        "end_time": "20:00:00",
         "duration": null,
         "reviews": [
             "This was our first dive as a couple together. Kann from Phuket Dive Tours made it so special for us..I will use them again.",
@@ -931,9 +720,12 @@
             "4th time in 2 years we have come back to Phuket to do courses and fun dives with Phuket Dive Tours. Fabulous everytime no matter what we did. Superb instructors and a great team. Highly recommended! Took me from a very nervous non diver to completion of my advanced adventurer. They go at your pace and safety and comfort is paramount. No 1 for diving in Phuket. A+++++++ Special thanks to Jon Parr, Tim Mayor, Dave and Benz. See you soon. Sara (Australia)",
             "Vi har i Januar haft 7 dyk, 1 fra kata strand 3 p bd ved Racha yai og 3 dyk ved Phi Phi og Shark point. Det har vret 7 super dyk med masser af nye oplevelser og vores instruktr Kan hun har bare vret fantastisk og vi har set 2 slags hajer og skildpadder og masser af andre fisk og hummer. Kan er bare super dygtige og er bare et stort smil og top profesionelle . Kan kun anbefalede dette sted. In January we had 7 dives, 1 from kata beach 3 on a boat at Racha yai and 3 dives at Phi Phi and Shark point. It has been 7 super dives with lots of new experiences and our instructor Kan she has been just fantastic and we have seen 2 kinds of sharks and turtles and lots of other fish and lobsters. Kan is just super talented and just has a big smile and top professional. Can only recommend this place."
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Nai Harn Beach",
@@ -955,31 +747,12 @@
             "Is the great beach, With places to eat and drink. They is a life guard station. Word of warning the water drops of very sharply so be careful when walking with kids. The tidy is quite strong at the water edge.",
             "Spent numerous hours here, sands are warm and relatively clean put your beach towel on the sand or pay for a sun lounger. Sea is a clear misty greeny blue with a robust rippling tide, plenty of stalls for drinks and food and souvenirs Breezy Beach"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [
-            "Rock Salt 2,777 0.2 mi $$ - $$$ • Seafood • Mediterranean • European",
-            "Cosmo Restaurant & Bar 374 0.2 mi $$ - $$$ • Mediterranean • European • Asian",
-            "Mama Seafood 375 256 ft $ • Seafood • International • Asian",
-            "PRIME at Rock Salt 69 0.2 mi $$$$ • Grill",
-            "Naiharn Sea Breeze - Lom Talay 90 0.1 mi $$ - $$$ • Asian • Thai • Vegetarian Friendly",
-            "Trattoria del Buongustaio 257 0.3 mi $$ - $$$ • Italian • Seafood • Mediterranean",
-            "Sainab 38 0.1 mi $ • Seafood • Asian • Thai",
-            "Jasmine Seafood 59 236 ft $ • Seafood • European • Asian",
-            "Coconut 38 0.2 mi $ • Seafood • Asian • Thai",
-            "Bad Guy Coffee 5 0.2 mi"
-        ],
-        "best_nearby_attractions": [
-            "Wat NaiHarn 27 0.1 mi Religious Sites",
-            "Windmill Viewpoint 317 0.5 mi Lookouts",
-            "Yanui Beach 607 0.7 mi Beaches",
-            "Ao Sane 226 0.6 mi Beaches",
-            "Big Buddha Phuket 16,834 Points of Interest & Landmarks • Religious Sites",
-            "Promthep Cape 1,990 1 mi Lookouts",
-            "Temple Brazilian Jiu-jitsu 3 0.5 mi Sports Complexes",
-            "Ao Sane Beach 56 0.5 mi Beaches",
-            "Karon Viewpoint 2,876 1.4 mi Lookouts",
-            "Kata Noi Beach 2,845 2.1 mi Beaches"
-        ]
+        "nearby_foodAndDrink1": "Rock Salt",
+        "nearby_foodAndDrink2": "Cosmo Restaurant & Bar",
+        "nearby_foodAndDrink3": "Mama Seafood",
+        "nearby_activity1": "Wat NaiHarn",
+        "nearby_activity2": "Windmill Viewpoint",
+        "nearby_activity3": "Yanui Beach"
     },
     {
         "activity_name": "Super Divers",
@@ -988,8 +761,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "1:00 PM",
-        "end_time": "5:00 PM",
+        "start_time": "13:00:00",
+        "end_time": "17:00:00",
         "duration": null,
         "reviews": [
             "The Diving course with Ramin was amazing! We had such a good time and felt always save with him. We really liked that you dont have to think about anything. Getting pickt up every morning and getting a bunch of meals on the boat makes it very easy to plan your day. We will definitely come back for a few fun dives! Thank you Ramin for making our trip as amazing as it was!!",
@@ -1003,9 +776,12 @@
             "I did my OWD course there with my instructor Nat! It was great, the staff of the dive school is so friendly and obliging! Nat was a great instructor, it was fun talking and listening to her - I can recommend this dive school so much ! Also, my friends decided to came with me on the dive day for some DiscoverScubaDive with a German freelancer/instructor Rob. They enjoyed their day on the boat very much and had a fun time. Thanks a lot to the team - for all people interested in diving - go to Super Divers Phuket!",
             "What an experience. From start to finish the level of service was incredible. Fast, efficient and friendly contact from Josh & Andy meant a seamless service was achieved. No question was too much trouble ( and I had a fair few ). I decided to take the plunge ( pun intended ) and go for my open water qualification with a nitrox air course added too. The booking and payment process was easy and safe and all e-learning was sent quickly which gave me the opportunity to get this done before travelling to save time when I was there. Once in resort all the contact was done over email with transfer times to the pool for the practice sessions and then to the pier for the dives all arriving on time. My only negative was that I didnt realise ( and may be my fault ) the dives went from Chalong pier. I presumed we went from Patong which is where the office was and so I stayed in Patong. Chalong is a half hour transfer and I would have rather stayed there than Patong as its a quieter area and more my style but thats more my fault. Anyway back to the service. I was paired with Ramin as my instructor for my course. I cannot speak highly enough of Ramin. What a guy! It was only myself on the course and so I received what felt like an extremely exclusive 1 to 1 service. From start to finish everything was at a pace to suit me. Time was taken to explain every step. The confined pool dives were done in great time, never rushed and explained in a way I understood. Ramins English was of a high level and so there were never any confusion. Then the dives. Thats the main part. WOW WOW WOW. Even better than I ever imagined. What a super professional set up. We did 6 dives over 2 days on 2 separate dive boats. Both boats were busy, full mostly of experienced divers. The company used to provide the dive boats have a great relationship with Super Divers and knew Ramin very well and made sure I was catered for exceptionally well as they were aware I was a learner. My equipment was placed in an area easier for me to use which was such a great thought. The boat staff looked out for me when I was getting ready too. Ramin was so professional and took me step by step all the way. I didnt once feel unsafe or unsupported both on the boat and underwater. Ramin always checked in with me. I had problems equalising my ears on occasions and Ramin kept me calm and helped me work through this. Ramin pointed out many fish and aquatic life whilst diving and during our last dives he kindly took his camera with him and for a small fee took many photos which he then transferred to my phone so I have the memories of a life time. In summary, if you are thinking of diving in Phuket or doing a course, the please use Super Divers. You will not be disappointed. For the price I paid I cannot believe the service I received. It was one of the best decisions I ever made. Thank you again, and please pass my appreciation on to Ramin. A guy Ill remember forever. Cheers, Ady"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Southern Flavors Phuket Food Tour with 15+ Tastings",
@@ -1029,9 +805,12 @@
             "Our tour guide Lucky was FANTASTIC! All the food was delicious and there was so much to see and taste. Not only did Lucky guide us to the best places for food, she also shared loads of interesting information and history and the area! 10/10 would absolutely recommend!",
             "The food tour was fantastic - it was such a great blend of great bites, cultural/historical insights, and fun sights in Phuket old town. Highly recommend to do this early on your trip - we did this tour day 1 and it really set the tone for engaging with this city. Nam was a fantastic guide, and you could tell she not only loves her job, she loves the people hosting us at each stop along the way. The warmness of the connections made the food taste even better!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     },
     {
         "activity_name": "Aussie Divers Phuket",
@@ -1040,8 +819,8 @@
         ],
         "latitude": null,
         "longitude": null,
-        "start_time": "7:00 AM",
-        "end_time": "7:00 PM",
+        "start_time": "07:00:00",
+        "end_time": "19:00:00",
         "duration": null,
         "reviews": [
             "The team at Aussie Divers were absolutely amazing! From the training, organisation and dive sites, I definitely had a great time. Darren and the team were very prompt with emails and messages and made the experience very enjoyable. If you're ever in Phuket, I'd definitely recommend them!",
@@ -1055,8 +834,11 @@
             "I took my open water course here. It was a lot of fun! Our instructor, Gong is a professional and was patient with any questions and concerns that we had. Will dive with Aussie Divers the next time were back to Phuket. We visited during the shoulder season of the beginning of May, and I was worried about water visibility. The waters were calm and clear.",
             "I dove with Aussie Divers in May and was so pleased with my experiencea 3-dive fun dive package at Phi Phi Islands. I didn't have time to stay on Phi Phi Islands, so this was a great day-trip option from Phuket. They did a great job communicating timing for my hotel pickup, and even dropped me off at the next hotel I was staying at (since I checked out that morning). We boarded a large boat that also had other dive shop groups (this makes sense given the long journey to Phi Phi). The boat operators have this down to a science. Despite the different dive operators on the boat, there was no confusion about whose gear was whose because we had specific spots for each diver. We even had two freshwater showers at the back of the boat for those coming in from dives! Because it was low season, I was lucky enough to be the only one paired with my dive master, Martin. He's a great DMhis dive briefings were very thorough, he set clear expectations on timing, and pointed out lots of marine life that I otherwise wouldn't have spotted. I felt very comfortable asking him any question between dives, ranging from our next dive to the types of marine life we spotted in the prior dive. Also, I was so pleased by the lunch buffetprops to the chef! There was never a point where I went hungry. After every dive, more food appeared. The boat staff were also very kind, and so helpful when leaving or coming back from dives. I highly recommend Aussie Divers Phuket to anyone looking for a quality day-trip to dive around Phi Phi islands!"
         ],
-        "best_nearby_hotels": [],
-        "best_nearby_restaurants": [],
-        "best_nearby_attractions": []
+        "nearby_foodAndDrink1": null,
+        "nearby_foodAndDrink2": null,
+        "nearby_foodAndDrink3": null,
+        "nearby_activity1": null,
+        "nearby_activity2": null,
+        "nearby_activity3": null
     }
 ]
