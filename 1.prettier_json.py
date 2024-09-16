@@ -4,7 +4,7 @@ import os
 import glob
 
 # Specify the directory containing the .jsonl files
-input_directory = "do"  # Replace with your directory path
+input_directory = "eat"  # Replace with your directory path
 output_directory = os.path.join(input_directory, "prettier_json")  # Output in a subdirectory
 
 # Create the output directory if it doesn't exist

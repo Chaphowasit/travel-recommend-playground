@@ -74,7 +74,6 @@ def extract_nearby_places(soup, best_nearby_hotels):
     
     if nearby_places:
         nearby_places_text = [place.text.strip() for place in nearby_places]
-        
         # Identify indexes for hotels, restaurants, and attractions
         try:
             index_best_nearby_hotels = nearby_places_text.index("Best nearby hotels")
@@ -131,6 +130,29 @@ def extract_nearby_places(soup, best_nearby_hotels):
     return classification_nearby
 
 
+
+def get_next_id(existing_ids, prefix):
+    # Extract numbers from IDs that match the given prefix
+    ids_with_prefix = [int(id[len(prefix):]) for id in existing_ids if id.startswith(prefix)]
+    if ids_with_prefix:
+        next_id_num = max(ids_with_prefix) + 1
+    else:
+        next_id_num = 1
+    return f"{prefix}{next_id_num:04d}"
+
+def generate_id(category_name, existing_ids):
+    if category_name == 'foodAndDrink_name':
+        prefix = 'F'
+    elif category_name == 'accommodation_name':
+        prefix = 'H'
+    elif category_name == 'activity_name':
+        prefix = 'A'
+    else:
+        raise ValueError("Unknown table name")
+    
+    # Generate the next ID
+    return get_next_id(existing_ids, prefix)
+
 def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None, time_class=None, duration=False, best_nearby_hotels=True):
     cleaned_json = []
     
@@ -138,7 +160,12 @@ def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None,
         url = entry.get("url", "")
         html_content = html.unescape(entry.get("html", ""))
         soup = BeautifulSoup(html_content, "html.parser")
+        
+        id_name = f"{name_key[:len(name_key)-len("_name")]}_id"
         classification = {}
+        existing_ids = [entry.get("classification", {}).get(f"{id_name}", "") for entry in json_data if "classification" in entry]
+        # Generate ID based on table name and existing IDs
+        classification[id_name] = generate_id(name_key, existing_ids) if name_key else None
 
         # Extract title
         headings = soup.find_all(["h1", "h2", "h3"])
@@ -146,6 +173,12 @@ def clean_html_and_classify(json_data, name_key, desc_class, reviews_class=None,
 
         # Extract description
         paragraphs = soup.find_all(class_=desc_class)
+        
+        if not paragraphs:
+            paragraphs = soup.find_all(class_="ui_columns")
+            # find element with the "Details" text
+            paragraphs = [ para for para in paragraphs if "About" in para.text.strip() and "Manage this business?" not in para.text.strip()
+]
         if paragraphs:
             classification["about_and_tags"] = [
                 remove_newline_and_extra_spaces(paragraph.text.strip()) for paragraph in paragraphs

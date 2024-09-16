@@ -24,25 +24,33 @@ def clean_html_and_classify(json_data):
         paragraphs = soup.find_all(
             class_="biGQs _P pZUbB alXOW eWlDX GzNcM ATzgx UTQMg TwpTY hmDzD"
         )
+        
+        if not paragraphs:
+            paragraphs = soup.find_all(class_="ui_columns")
+            # find element with the "Details" text
+            paragraphs = [para for para in paragraphs if "About" in para.get_text() and "Manage this business?" not in para.get_text()]
+        
         if paragraphs:
+            print("paragraphs", paragraphs)
             classification["about_and_tags"] = [
                 para.text.strip() for para in paragraphs
             ]
-        else:
+        #else:
             # Try to find description using regex
-            description_pattern = r'"description":"(.*?)"'
-            description_match = re.search(description_pattern, html_content)
-            description_soup = soup.find_all(class_="SrqKb")
+            # description_pattern = r'"description":"(.*?)"'
+            # description_match = re.search(description_pattern, html_content)
+            # description_soup = soup.find_all(class_="SrqKb")
 
-            if description_match:
-                # Initialize as a list with the matched description
-                classification["about_and_tags"] = [description_match.group(1)]
+            # if description_match:
+            #     print("description_match", description_match)
+            #     # Initialize as a list with the matched description
+            #     classification["about_and_tags"] = [description_match.group(1)]
 
-                # Append the description_soup text to the list
-                for desc in description_soup:
-                    classification["about_and_tags"].append(desc.text.strip())
-            else:
-                classification["about_and_tags"] = None
+            #     # Append the description_soup text to the list
+            #     for desc in description_soup:
+            #         classification["about_and_tags"].append(desc.text.strip())
+            # else:
+            #     classification["about_and_tags"] = None
 
         # Extract address from the HTML content
         latitude = None
