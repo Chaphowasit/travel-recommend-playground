@@ -4,8 +4,10 @@ import os
 import glob
 
 # Specify the directory containing the .jsonl files
-input_directory = "eat"  # Replace with your directory path
-output_directory = os.path.join(input_directory, "prettier_json")  # Output in a subdirectory
+input_directory = "do"  # Replace with your directory path
+output_directory = os.path.join(
+    input_directory, "prettier_json"
+)  # Output in a subdirectory
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_directory, exist_ok=True)
@@ -34,7 +36,9 @@ for input_file in jsonl_files:
 
     # Determine the next available number for the output file
     file_number = 1
-    while os.path.exists(os.path.join(output_directory, f"{base_name}{file_number}.json")):
+    while os.path.exists(
+        os.path.join(output_directory, f"{base_name}{file_number}.json")
+    ):
         file_number += 1
 
     # Construct the output file path with the incremented number

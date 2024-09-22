@@ -27,7 +27,7 @@
 #             # Skip NoneType values
 #             if value is None:
 #                 continue
-            
+
 #             if key not in schema:
 #                 if isinstance(value, int):
 #                     schema[key] = 'INT'
@@ -44,7 +44,7 @@
 #                     schema[key] = 'TIME'
 #                 else:
 #                     schema[key] = 'TEXT'
-                    
+
 #             else:
 #                 if isinstance(value, str):
 #                     if len(value) > 255:
@@ -157,11 +157,12 @@ load_dotenv()
 
 # Database connection details from environment variables
 db_config = {
-    'host': os.getenv('DB_HOST'),
-    'user': os.getenv('DB_USER'),
-    'password': os.getenv('DB_PASSWORD'),
-    'database': os.getenv('DB_NAME')
+    "host": os.getenv("DB_HOST"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME"),
 }
+
 
 def escape_string(value):
     if isinstance(value, str):
@@ -176,35 +177,36 @@ def infer_schema_from_json(data):
             # Skip NoneType values
             if value is None:
                 continue
-            
+
             if key not in schema:
                 if isinstance(value, int):
-                    schema[key] = 'INT'
+                    schema[key] = "INT"
                 elif isinstance(value, float):
-                    schema[key] = 'DOUBLE'
+                    schema[key] = "DOUBLE"
                 elif isinstance(value, bool):
-                    schema[key] = 'BOOLEAN'
-                elif isinstance(value, str) and not key.endswith('_time'):
+                    schema[key] = "BOOLEAN"
+                elif isinstance(value, str) and not key.endswith("_time"):
                     if len(value) <= 255:
-                        schema[key] = 'VARCHAR(255)'
+                        schema[key] = "VARCHAR(255)"
                     else:
-                        schema[key] = 'TEXT'
-                elif isinstance(value, str) and key.endswith('_time'):
-                    schema[key] = 'TIME'
+                        schema[key] = "TEXT"
+                elif isinstance(value, str) and key.endswith("_time"):
+                    schema[key] = "TIME"
                 else:
-                    schema[key] = 'TEXT'
-                    
+                    schema[key] = "TEXT"
+
             else:
                 if isinstance(value, str):
                     if len(value) > 255:
-                        schema[key] = 'TEXT'
-                if isinstance(value, int) and schema[key] != 'INT':
-                    schema[key] = 'INT'
-                if isinstance(value, float) and schema[key] != 'DOUBLE':
-                    schema[key] = 'DOUBLE'
-                if isinstance(value, bool) and schema[key] != 'BOOLEAN':
-                    schema[key] = 'BOOLEAN'
+                        schema[key] = "TEXT"
+                if isinstance(value, int) and schema[key] != "INT":
+                    schema[key] = "INT"
+                if isinstance(value, float) and schema[key] != "DOUBLE":
+                    schema[key] = "DOUBLE"
+                if isinstance(value, bool) and schema[key] != "BOOLEAN":
+                    schema[key] = "BOOLEAN"
     return schema
+
 
 def create_table_from_schema(connection, table_name, schema):
     with connection.cursor() as cursor:
@@ -213,16 +215,21 @@ def create_table_from_schema(connection, table_name, schema):
         cursor.execute(create_table_query)
         connection.commit()
 
+
 def insert_data_into_table(connection, table_name, data, schema):
     with connection.cursor() as cursor:
         for entry in data:
             columns = ", ".join([f"`{col}`" for col in schema.keys()])
             placeholders = ", ".join(["%s"] * len(schema))
-            insert_query = f"INSERT INTO `{table_name}` ({columns}) VALUES ({placeholders})"
+            insert_query = (
+                f"INSERT INTO `{table_name}` ({columns}) VALUES ({placeholders})"
+            )
             # Prepare values based on their types
             values = []
             for col in schema.keys():
-                value = entry.get(col, None)  # Get the value, or use None if not present
+                value = entry.get(
+                    col, None
+                )  # Get the value, or use None if not present
                 if isinstance(value, str):
                     value = escape_string(value)
                 elif isinstance(value, (list, dict)):
@@ -239,6 +246,7 @@ def insert_data_into_table(connection, table_name, data, schema):
                 raise
         connection.commit()
 
+
 def process_json_files(connection, json_directory, table_name):
     json_files = [f for f in os.listdir(json_directory) if f.endswith(".json")]
     for json_file in json_files:
@@ -254,12 +262,13 @@ def process_json_files(connection, json_directory, table_name):
         insert_data_into_table(connection, table_name, json_data, schema)
         print(f"Data from '{input_file}' inserted into '{table_name}'")
 
+
 def main():
     try:
         connection = pymysql.connect(**db_config)
-        process_json_files(connection, 'eat/extract_json', 'foodAndDrink')
-        process_json_files(connection, 'stay/extract_json', 'accommodation')
-        process_json_files(connection, 'do/extract_json', 'activity')
+        # process_json_files(connection, 'eat/extract_json', 'foodAndDrink')
+        process_json_files(connection, "stay/extract_json", "accommodation")
+        process_json_files(connection, "do/extract_json", "activity")
     except OperationalError as e:
         print(f"Error connecting to MariaDB: {e}")
     except ProgrammingError as e:
@@ -267,6 +276,7 @@ def main():
     finally:
         if connection:
             connection.close()
+
 
 if __name__ == "__main__":
     main()
