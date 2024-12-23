@@ -1,0 +1,170 @@
+{
+    "accommodation": "H0021",
+    "activities": [
+      {
+        "day": 1,
+        "place": [
+          {
+            "linked_id": "1",
+            "id": "A0423",
+            "visit_time": [
+              {
+                "start": 40,
+                "end": 48
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "2",
+            "id": "A0153",
+            "visit_time": [
+              {
+                "start": 56,
+                "end": 68
+              }
+            ],
+            "must": false
+          },
+          {
+            "linked_id": "3",
+            "id": "A0155",
+            "visit_time": [
+              {
+                "start": 56,
+                "end": 68
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "4",
+            "id": "A0512",
+            "visit_time": [
+              {
+                "start": 64,
+                "end": 72
+              }
+            ],
+            "must": false
+          }
+          
+        ],
+        "time_anchor": {
+          "morning": 28,
+          "evening": 72
+        }
+      },
+      {
+        "day": 2,
+        "place": [
+          {
+            "linked_id": "1",
+            "id": "A0527",
+            "visit_time": [
+              {
+                "start": 30,
+                "end": 34
+              },
+              {
+                "start": 38,
+                "end": 48
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "2",
+            "id": "A0444",
+            "visit_time": [
+              {
+                "start": 52,
+                "end": 60
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "3",
+            "id": "A0002",
+            "visit_time": [
+              {
+                "start": 60,
+                "end": 64
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "4",
+            "id": "A0238",
+            "visit_time": [
+              {
+                "start": 68,
+                "end": 72
+              }
+            ],
+            "must": false
+          }
+        ],
+        "time_anchor": {
+          "morning": 30,
+          "evening": 72
+        }
+      },
+      {
+        "day": 3,
+        "place": [
+          {
+            "linked_id": "1",
+            "id": "A0055",
+            "visit_time": [
+              {
+                "start": 40,
+                "end": 48
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "2",
+            "id": "A0815",
+            "visit_time": [
+              {
+                "start": 52,
+                "end": 60
+              }
+            ],
+            "must": false
+          },
+          {
+            "linked_id": "3",
+            "id": "A0809",
+            "visit_time": [
+              {
+                "start": 68,
+                "end": 72
+              }
+            ],
+            "must": true
+          },
+          {
+            "linked_id": "4",
+            "id": "A0234",
+            "visit_time": [
+              {
+                "start": 68,
+                "end": 72
+              }
+            ],
+            "must": false
+          }
+        ],
+        "time_anchor": {
+          "morning": 28,
+          "evening": 72
+        }
+      }
+    ]
+  }
+  

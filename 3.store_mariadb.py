@@ -162,6 +162,7 @@ db_config = {
     "password": os.getenv("DB_PASSWORD"),
     "database": os.getenv("DB_NAME"),
 }
+print(db_config)
 
 
 def escape_string(value):
@@ -196,6 +197,8 @@ def infer_schema_from_json(data):
                     schema[key] = "TEXT"
 
             else:
+                if key.endswith("url"):
+                    schema[key] = "TEXT"
                 if isinstance(value, str):
                     if len(value) > 255:
                         schema[key] = "TEXT"
@@ -238,7 +241,7 @@ def insert_data_into_table(connection, table_name, data, schema):
                 elif value is None:
                     value = None  # This will be treated as NULL in SQL
                 values.append(value)
-            print(f"Inserting: {values}")
+            # print(f"Inserting: {values}")
             try:
                 cursor.execute(insert_query, values)
             except Exception as e:
@@ -267,8 +270,12 @@ def main():
     try:
         connection = pymysql.connect(**db_config)
         # process_json_files(connection, 'eat/extract_json', 'foodAndDrink')
-        process_json_files(connection, "stay/extract_json", "accommodation")
-        process_json_files(connection, "do/extract_json", "activity")
+        # process_json_files(
+        #     connection, "stay/extract_json_version2_noDup_image", "Accommodation"
+        # )
+        process_json_files(
+            connection, "do/extract_json_version2_noDup_image", "Activity"
+        )
     except OperationalError as e:
         print(f"Error connecting to MariaDB: {e}")
     except ProgrammingError as e:

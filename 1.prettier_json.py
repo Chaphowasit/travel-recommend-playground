@@ -4,7 +4,7 @@ import os
 import glob
 
 # Specify the directory containing the .jsonl files
-input_directory = "do"  # Replace with your directory path
+input_directory = "do_add300"  # Replace with your directory path
 output_directory = os.path.join(
     input_directory, "prettier_json"
 )  # Output in a subdirectory
